@@ -1,0 +1,387 @@
+BOUNDARY-HORIZON LOGIC (BHL) FOUNDATIONS
+
+VERSION 0.1
+
+====================================================================
+
+ABSTRACT
+
+Boundary-Horizon Logic (BHL) is a logical framework derived from the
+Boundary-Horizon-Finitude (BHF) Framework.
+
+The central premise of BHL is that truth is not the primary object of
+logical analysis.
+
+Before a proposition can be evaluated as true or false, it must first
+be located relative to an informational boundary.
+
+BHL therefore studies propositions through the concepts of:
+
+- Boundary
+- Horizon
+- Distinguishability
+- Accessibility
+- Resolution
+
+The framework is intended as a formal language for reasoning about
+incomplete information, self-reference, paradoxes, finite knowledge,
+and informational limits.
+
+====================================================================
+
+1. MOTIVATION
+
+Classical logic begins with truth values.
+
+A proposition is assigned one of two values:
+
+TRUE
+
+or
+
+FALSE.
+
+However, many propositions resist immediate classification.
+
+Examples include:
+
+- Russell's Paradox
+- The Liar Paradox
+- Gödel Sentences
+- Unsolved Mathematical Conjectures
+- Statements about inaccessible information
+
+Such statements often reveal limitations not of the proposition itself
+but of the informational boundary within which evaluation occurs.
+
+BHL therefore asks a prior question:
+
+"Where is the proposition located relative to the evaluating system?"
+
+Only after this question is answered does truth evaluation proceed.
+
+====================================================================
+
+2. THE BOUNDARY PRINCIPLE
+
+A boundary is an informational domain.
+
+Notation:
+
+Ω
+
+Examples of boundaries include:
+
+- A formal logical system
+- A mathematical theory
+- A physical observer
+- A computational model
+- A body of scientific knowledge
+
+A boundary determines what can be represented, distinguished, and
+resolved within a system.
+
+====================================================================
+
+3. INNER AND OUTER BOUNDARIES
+
+BHL distinguishes between two fundamental domains.
+
+Inner Boundary:
+
+Ωin
+
+The operational domain currently available to a system.
+
+Outer Boundary:
+
+Ωout
+
+The maximal ambient domain containing the system.
+
+The relationship is:
+
+Ωin ⊆ Ωout
+
+A system never operates directly upon all possible information.
+
+It operates only within its current boundary.
+
+====================================================================
+
+4. THE HORIZON PRINCIPLE
+
+The Horizon represents the distinguishable difference between an inner
+and outer boundary.
+
+Notation:
+
+H(Ωout, Ωin)
+
+Conceptually:
+
+Horizon = Outer Boundary − Inner Boundary
+
+The Horizon contains information that is:
+
+- Distinguishable
+- Accessible in principle
+- Not yet fully resolved
+
+The Horizon is therefore the frontier between knowledge and uncertainty.
+
+====================================================================
+
+5. DISTINGUISHABILITY
+
+Distinguishability is the primitive quantity of BHL.
+
+Two objects are distinguishable if a boundary can separate them.
+
+Without distinction:
+
+- No classification exists.
+- No identity exists.
+- No proposition can be formed.
+
+Thus distinction precedes truth.
+
+Principle:
+
+Distinction -> Representation -> Evaluation
+
+Truth becomes a secondary operation built upon prior distinction.
+
+====================================================================
+
+6. PROPOSITIONS AS BOUNDARY OBJECTS
+
+In BHL, propositions are not initially classified by truth.
+
+Instead they are classified by boundary position.
+
+A proposition p occupies a position relative to a boundary Ω.
+
+Thus:
+
+Position(p, Ω)
+
+is logically prior to
+
+Truth(p).
+
+====================================================================
+
+7. THE SIX INFORMATIONAL STATES
+
+BHL introduces six informational states.
+
+X  = External
+U  = Unknown
+H  = Horizon
+KT = Known True
+KF = Known False
+UH = Universal Horizon
+
+Descriptions:
+
+X
+
+The proposition lies outside the current domain of discourse.
+
+--------------------------------------------------
+
+U
+
+The proposition exists within the domain but remains inaccessible.
+
+--------------------------------------------------
+
+H
+
+The proposition is distinguishable but unresolved.
+
+--------------------------------------------------
+
+KT
+
+The proposition is resolved as true.
+
+--------------------------------------------------
+
+KF
+
+The proposition is resolved as false.
+
+--------------------------------------------------
+
+UH
+
+The proposition is evaluated relative to the Universal Horizon,
+the maximal boundary containing all boundary systems.
+
+====================================================================
+
+8. KNOWLEDGE TRANSITIONS
+
+Knowledge develops through boundary transitions.
+
+Typical progression:
+
+U -> H -> KT
+
+or
+
+U -> H -> KF
+
+A proposition generally becomes:
+
+Unknown
+
+before becoming
+
+Horizon
+
+before becoming
+
+Resolved.
+
+The Horizon therefore functions as an intermediate state between
+ignorance and determination.
+
+====================================================================
+
+9. SELF-REFERENCE
+
+Self-reference occurs when evaluation of a proposition requires
+evaluation of itself.
+
+Examples include:
+
+"This statement is false."
+
+or
+
+R ∈ R
+
+in Russell's construction.
+
+Classical systems often produce contradiction when unrestricted
+self-reference is allowed.
+
+BHL interprets self-reference as evidence that a proposition lies
+on a boundary of distinguishability.
+
+====================================================================
+
+10. THE HORIZON CLASSIFICATION PRINCIPLE
+
+BHL introduces the following principle.
+
+If determination of a proposition requires crossing the current
+informational boundary, then the proposition occupies a Horizon state.
+
+Symbolically:
+
+Boundary-Crossing(p)
+
+=>
+
+p = H
+
+This allows unresolved propositions to be represented without forcing
+immediate contradiction.
+
+====================================================================
+
+11. RUSSELL'S PARADOX
+
+Consider:
+
+R = {x : x not in x}
+
+The question is:
+
+R ∈ R ?
+
+Classical evaluation produces a contradiction.
+
+BHL approaches the statement differently.
+
+The membership question requires recursive self-evaluation.
+
+The proposition therefore exceeds the immediate operational boundary.
+
+Consequently:
+
+R ∈ R = H
+
+The proposition is classified as a Horizon proposition.
+
+The contradiction becomes a boundary phenomenon rather than a truth-value
+explosion.
+
+====================================================================
+
+12. THE UNIVERSAL HORIZON
+
+The Universal Horizon is denoted:
+
+UH
+
+UH is not interpreted as a conventional universal set.
+
+Instead UH represents the maximal horizon containing all possible
+distinguishable boundary systems.
+
+Every boundary exists within UH.
+
+Formally:
+
+For every Ωi,
+
+Ωi ⊆ UH
+
+UH serves as the ultimate context within which all local boundaries
+can be compared.
+
+====================================================================
+
+13. THE BOUNDARY-HORIZON VIEW OF LOGIC
+
+Classical Logic asks:
+
+"Is the proposition true or false?"
+
+Boundary-Horizon Logic asks:
+
+"Where is the proposition located relative to a boundary?"
+
+The evaluation process therefore becomes:
+
+1. Locate the proposition.
+2. Determine accessibility.
+3. Determine distinguishability.
+4. Determine resolution.
+5. Assign truth status if possible.
+
+Truth is thus derived from boundary position rather than assumed
+as a primitive concept.
+
+====================================================================
+
+14. CORE FOUNDATIONAL AXIOMS
+
+Axiom F1: Boundary Existence
+
+Every logical system possesses at least one informational boundary.
+
+--------------------------------------------------
+
+Axiom F2: Boundary Inclusion
+
+Every operational boundary exists within a larger ambient boundary.
+
+Ωin ⊆ Ωout
+
+-----------------------------
