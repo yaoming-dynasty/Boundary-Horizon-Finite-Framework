@@ -1,0 +1,463 @@
+BOUNDARY-HORIZON LOGIC (BHL) ALGEBRA
+
+VERSION 0.1
+
+====================================================================
+
+ABSTRACT
+
+This document introduces the algebraic structure underlying
+Boundary-Horizon Logic (BHL).
+
+The purpose of the algebra is to formalize informational
+boundaries, distinguishability, horizon states, and knowledge
+transitions within the Boundary-Horizon-Finitude (BHF) framework.
+
+Rather than treating truth as a binary property, BHL represents
+propositions as elements of an ordered informational space whose
+structure is determined by boundaries and horizons.
+
+====================================================================
+
+1. FUNDAMENTAL OBJECTS
+
+The foundational object of the framework is a boundary.
+
+A boundary is denoted:
+
+Ω
+
+A boundary represents an informational domain.
+
+Examples:
+
+- An observer's available information
+- A mathematical structure
+- A physical system
+- A logical theory
+
+Each boundary possesses an interior region and an exterior region.
+
+====================================================================
+
+2. BOUNDARY RELATION
+
+Given two boundaries
+
+Ωa
+
+and
+
+Ωb
+
+with
+
+Ωb ⊆ Ωa
+
+define the Horizon Operator
+
+H(Ωa, Ωb)
+
+by
+
+H(Ωa, Ωb) = Ωa − Ωb
+
+Interpretation:
+
+The horizon measures distinguishable structure remaining after
+the inner boundary is removed from the outer boundary.
+
+====================================================================
+
+3. AXIOMS OF THE HORIZON OPERATOR
+
+Axiom H1 (Identity)
+
+H(Ω, Ω) = 0
+
+A collapsed boundary has no remaining horizon.
+
+--------------------------------------------------
+
+Axiom H2 (Non-Negativity)
+
+If
+
+Ωb ⊆ Ωa
+
+then
+
+H(Ωa, Ωb) ≥ 0
+
+--------------------------------------------------
+
+Axiom H3 (Translation Invariance)
+
+For any admissible displacement k,
+
+H(Ωa + k, Ωb + k)
+
+=
+
+H(Ωa, Ωb)
+
+The horizon depends only upon relative separation.
+
+--------------------------------------------------
+
+Axiom H4 (Boundary Inclusion)
+
+Every inner boundary is contained within some outer boundary.
+
+Ωin ⊆ Ωout
+
+====================================================================
+
+4. DISTINCTION FUNCTION
+
+Define the Distinction Function
+
+D
+
+by
+
+D(Ωa, Ωb)
+
+=
+
+| Ωa − Ωb |
+
+Properties:
+
+D(Ω, Ω) = 0
+
+D(Ωa, Ωb) = D(Ωb, Ωa)
+
+D(Ωa, Ωb) ≥ 0
+
+Distinction is therefore a metric-like quantity measuring
+separation between boundaries.
+
+====================================================================
+
+5. TRUTH-STATE SPACE
+
+Define
+
+T = {X, U, H, KT, KF, UH}
+
+where
+
+X  = External
+U  = Unknown
+H  = Horizon
+KT = Known True
+KF = Known False
+UH = Universal Horizon
+
+These states are ordered according to distinguishability.
+
+====================================================================
+
+6. ORDERING
+
+Define
+
+X < U < H < KT < UH
+
+and
+
+X < U < H < KF < UH
+
+with KT and KF incomparable.
+
+Diagram:
+
+            UH
+           /  \
+         KT    KF
+           \  /
+            H
+            |
+            U
+            |
+            X
+
+====================================================================
+
+7. HORIZON JOIN OPERATOR
+
+Define
+
+⊕
+
+called Horizon Join.
+
+For states a and b,
+
+a ⊕ b
+
+returns the least upper bound.
+
+Examples:
+
+U ⊕ U = U
+
+U ⊕ H = H
+
+H ⊕ KT = KT
+
+H ⊕ KF = KF
+
+KT ⊕ KF = UH
+
+Interpretation:
+
+The join operator produces the minimal informational state
+capable of containing both operands.
+
+====================================================================
+
+8. HORIZON MEET OPERATOR
+
+Define
+
+⊗
+
+called Horizon Meet.
+
+For states a and b,
+
+a ⊗ b
+
+returns the greatest lower bound.
+
+Examples:
+
+KT ⊗ KT = KT
+
+KT ⊗ H = H
+
+KT ⊗ U = U
+
+KT ⊗ KF = H
+
+KF ⊗ U = U
+
+Interpretation:
+
+The meet operator captures shared distinguishability.
+
+====================================================================
+
+9. ALGEBRAIC IDENTITIES
+
+Commutativity
+
+a ⊕ b = b ⊕ a
+
+a ⊗ b = b ⊗ a
+
+--------------------------------------------------
+
+Associativity
+
+(a ⊕ b) ⊕ c
+
+=
+
+a ⊕ (b ⊕ c)
+
+(a ⊗ b) ⊗ c
+
+=
+
+a ⊗ (b ⊗ c)
+
+--------------------------------------------------
+
+Idempotence
+
+a ⊕ a = a
+
+a ⊗ a = a
+
+--------------------------------------------------
+
+Absorption
+
+a ⊕ (a ⊗ b)
+
+=
+
+a
+
+a ⊗ (a ⊕ b)
+
+=
+
+a
+
+These identities follow from lattice structure.
+
+====================================================================
+
+10. UNIVERSAL HORIZON
+
+Define
+
+UH
+
+as the Universal Horizon.
+
+UH is not interpreted as a universal set.
+
+Instead UH represents the maximal horizon containing all
+possible boundary systems.
+
+For every boundary Ωi,
+
+Ωi ⊆ UH
+
+UH therefore acts as the maximal element of the algebra.
+
+====================================================================
+
+11. HORIZON DYNAMICS
+
+Propositions may evolve through informational states.
+
+Unknown proposition:
+
+U
+
+may become
+
+H
+
+when sufficient distinction is detected.
+
+H
+
+may become
+
+KT
+
+or
+
+KF
+
+when resolved.
+
+Examples:
+
+U → H → KT
+
+U → H → KF
+
+Knowledge acquisition is modeled as movement upward through
+the lattice.
+
+====================================================================
+
+12. SELF-REFERENCE OPERATOR
+
+Define
+
+ρ(p)
+
+called the Self-Reference Operator.
+
+ρ(p) = 1
+
+when evaluation of proposition p requires prior evaluation of p.
+
+Examples:
+
+- Russell self-membership
+- Liar sentences
+- Certain Gödel-style statements
+
+====================================================================
+
+13. SELF-REFERENCE AXIOM
+
+If
+
+ρ(p) = 1
+
+then
+
+p = H
+
+Meaning:
+
+Self-referential propositions are classified as Horizon
+propositions rather than assigned contradictory truth values.
+
+====================================================================
+
+14. RUSSELL EXAMPLE
+
+Let
+
+R = {x : x not in x}
+
+The proposition
+
+R in R
+
+requires its own evaluation.
+
+Therefore
+
+ρ(R in R) = 1
+
+and by the Self-Reference Axiom,
+
+R in R = H
+
+Russell's paradox is classified as a Horizon proposition.
+
+====================================================================
+
+15. BOUNDARY-HORIZON ALGEBRA
+
+The structure
+
+BHL = (T, ⊕, ⊗, X, UH)
+
+forms a bounded distributive lattice.
+
+where
+
+X is the bottom element
+
+UH is the top element
+
+⊕ is join
+
+⊗ is meet
+
+This algebra provides the formal mathematical foundation
+for Boundary-Horizon Logic.
+
+====================================================================
+
+16. FUTURE EXTENSIONS
+
+Potential extensions include:
+
+- Predicate BHL
+- Modal BHL
+- Temporal Horizons
+- Horizon Calculus
+- Boundary Topology
+- Category-Theoretic BHL
+- Gödel Boundary Analysis
+- Computational Horizon Dynamics
+- Boundary Information Geometry
+
+====================================================================
+
+END OF DOCUMENT
