@@ -1,0 +1,22 @@
+name: Run Bash Script
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout your repository code so the runner can access your .sh files
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Give execution permissions to your script
+      - name: Make script executable
+        run: chmod +x ./yaoming-dynasty/Boundary-Horizon-Finite-Framework/scripts
+
+      # 3. Execute the Bash script
+      - name: Run Bash script
+        run: ./path/to/your-script.sh
