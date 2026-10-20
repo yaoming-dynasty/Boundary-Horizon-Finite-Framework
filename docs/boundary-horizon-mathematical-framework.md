@@ -17,10 +17,10 @@ The **Boundary-Horizon Framework** explores how finite measurements emerge from 
 
 The framework is built upon five foundational entities:
 
-* **`{Outside_Boundary}` ($\Omega_{out}$):** The macro-level enclosing limit, outer constraint, or asymptotic boundary of the system.
-* **`{Inside_Boundary}` ($\Omega_{in}$):** The micro-level core, internal limit, or foundational anchor point within the system.
+* **`{Outside\_Boundary}` ($\Omega_{out}$):** The macro-level enclosing limit, outer constraint, or asymptotic boundary of the system.
+* **`{Inside\_Boundary}` ($\Omega_{in}$):** The micro-level core, internal limit, or foundational anchor point within the system.
 * **`{Horizon}` ($\mathcal{H}$):** The measurable distance, transition zone, or delta created by the interaction of the outer and inner boundaries.
-* **`{Finite_Number}` ($N$):** The resulting discrete, quantifiable value derived from the horizon.
+* **`{Finite\_Number}` ($N$):** The resulting discrete, quantifiable value derived from the horizon.
 * **`{Infinity}` ($\infty$):** The ambient, non-terminating scale or background against which the finite number holds meaning and relativity.
 
 ---
