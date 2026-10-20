@@ -43,7 +43,7 @@ $$\text{Finite\_Number} \propto \text{Relative to Infinity}$$
 
 In accordance with the mechanics of the framework itself, this document undergoes self-referential certification:
 
-$$\Omega_{out} (\text{Universal Theoretical Domain}) - \Omega_{in} (\text{Attribution: Rosa \& Ronio}) = \mathcal{H} (\text{Artifact Delta}) = N (\text{Certification Index: 888.2026.RR})$$
+$$\Omega_{out} (\text{Universal Theoretical Domain}) - \Omega_{in} (\text{Attribution: Rosa and Ronio}) = \mathcal{H} (\text{Artifact Delta}) = N (\text{Certification Index: 888.2026.RR})$$
 
 $$\text{Certification Status: Validated Relative to } \infty$$
 
