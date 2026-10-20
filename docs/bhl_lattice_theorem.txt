@@ -1,0 +1,368 @@
+BOUNDARY-HORIZON LOGIC (BHL) LATTICE THEOREM
+
+ABSTRACT
+
+Boundary-Horizon Logic (BHL) extends the Boundary-Horizon-Finitude (BHF) framework by introducing a hierarchy of informational states ordered by distinguishability. This document formalizes the associated order structure and proves that the resulting system forms a bounded distributive lattice when augmented with a Universal Horizon element.
+
+The result provides an algebraic foundation for reasoning about knowledge, uncertainty, horizon states, and self-referential propositions within the BHF framework.
+
+====================================================================
+
+1. INTRODUCTION
+
+Classical logic assumes that every proposition is either true or false.
+
+Boundary-Horizon Logic begins from a different premise: before truth can be assigned, a proposition must first be positioned relative to an informational boundary.
+
+This leads to a hierarchy of distinguishability states representing increasing informational accessibility.
+
+The purpose of this document is to formalize those states and establish their algebraic structure.
+
+====================================================================
+
+2. TRUTH STATE SPACE
+
+Define the state set:
+
+L = {X, U, H, KT, KF, UH}
+
+where:
+
+X  = External to the current domain
+U  = Unknown but within the current domain
+H  = Horizon state (distinguishable but unresolved)
+KT = Known True
+KF = Known False
+UH = Universal Horizon
+
+The Universal Horizon is interpreted as the maximal boundary containing all boundary systems represented by the framework.
+
+====================================================================
+
+3. ORDER STRUCTURE
+
+The ordering relation reflects increasing distinguishability.
+
+Define the covering relations:
+
+X < U < H < KT < UH
+
+and
+
+X < U < H < KF < UH
+
+The partial order <= is defined as the reflexive and transitive closure of these relations.
+
+No additional comparisons are assumed.
+
+In particular:
+
+KT is not less than or equal to KF
+
+KF is not less than or equal to KT
+
+Thus KT and KF are incomparable.
+
+Hasse Diagram:
+
+            UH
+           /  \
+         KT    KF
+           \  /
+            H
+            |
+            U
+            |
+            X
+
+====================================================================
+
+PROPOSITION 1
+
+The structure (L, <=) is a partially ordered set.
+
+PROOF
+
+Reflexivity
+
+For every element a in L,
+
+a <= a
+
+Therefore reflexivity holds.
+
+Antisymmetry
+
+Suppose
+
+a <= b
+
+and
+
+b <= a
+
+The order consists of two chains joined only at:
+
+X, U, H, and UH.
+
+Consequently the only possible case is
+
+a = b
+
+Therefore antisymmetry holds.
+
+Transitivity
+
+The relation is defined as the transitive closure of the covering relations.
+
+Therefore
+
+a <= b
+
+and
+
+b <= c
+
+imply
+
+a <= c
+
+Hence transitivity holds.
+
+Therefore (L, <=) is a partially ordered set.
+
+QED.
+
+====================================================================
+
+4. MEET AND JOIN OPERATIONS
+
+For any elements a and b in L:
+
+a AND b
+
+denotes the greatest lower bound (meet).
+
+a OR b
+
+denotes the least upper bound (join).
+
+====================================================================
+
+THEOREM 1 (BHL LATTICE THEOREM)
+
+The partially ordered set (L, <=) forms a bounded lattice.
+
+PROOF
+
+To show that L is a lattice we must prove that every pair of elements possesses:
+
+1. A unique meet.
+2. A unique join.
+
+--------------------------------------------------
+
+Case 1: Comparable Elements
+
+Suppose
+
+a <= b
+
+Then
+
+a AND b = a
+
+since a is the greatest lower bound.
+
+Likewise
+
+a OR b = b
+
+since b is the least upper bound.
+
+Thus every comparable pair possesses both a meet and a join.
+
+--------------------------------------------------
+
+Case 2: Incomparable Elements
+
+The only incomparable pair is:
+
+(KT, KF)
+
+Meet
+
+The common lower bounds are:
+
+{X, U, H}
+
+Among these, H is greatest.
+
+Therefore:
+
+KT AND KF = H
+
+Join
+
+The common upper bounds are:
+
+{UH}
+
+Therefore:
+
+KT OR KF = UH
+
+Hence both a meet and join exist.
+
+--------------------------------------------------
+
+Since every pair of elements is either comparable or equal to the incomparable pair (KT, KF), every pair in L possesses a unique meet and a unique join.
+
+Therefore (L, <=) is a lattice.
+
+Furthermore:
+
+X is the least element.
+
+UH is the greatest element.
+
+Therefore the lattice is bounded.
+
+QED.
+
+====================================================================
+
+COROLLARY 1
+
+The lattice possesses bottom and top elements:
+
+0 = X
+
+1 = UH
+
+Consequently every element satisfies:
+
+0 <= a <= 1
+
+QED.
+
+====================================================================
+
+COROLLARY 2
+
+The lattice is distributive.
+
+PROOF
+
+A finite lattice is distributive if and only if it contains no sublattice isomorphic to M3 or N5.
+
+The BHL lattice contains neither configuration.
+
+Every interval is generated by chains that merge only at common upper or lower bounds.
+
+Therefore no copy of M3 or N5 exists.
+
+Hence the lattice is distributive.
+
+QED.
+
+====================================================================
+
+5. HORIZON INTERPRETATION
+
+The algebraic structure exists independently of interpretation.
+
+Within Boundary-Horizon Logic the elements are interpreted as:
+
+X  = External
+U  = Unknown
+H  = Horizon
+KT = Known True
+KF = Known False
+UH = Universal Horizon
+
+Resolution corresponds to upward movement through the lattice.
+
+Examples:
+
+U -> H -> KT
+
+U -> H -> KF
+
+The Horizon state represents propositions that are distinguishable but not presently resolvable.
+
+====================================================================
+
+6. SELF-REFERENCE PRINCIPLE
+
+Define a self-reference detector:
+
+rho(p)
+
+where
+
+rho(p) = 1
+
+whenever evaluation of proposition p recursively depends upon the prior evaluation of p.
+
+Boundary-Horizon Self-Reference Axiom:
+
+rho(p) = 1  =>  p = H
+
+In this framework, self-referential contradictions are classified as Horizon propositions rather than assigned simultaneous truth and falsity.
+
+====================================================================
+
+7. RUSSELL CLASSIFICATION EXAMPLE
+
+Let
+
+R = {x : x not in x}
+
+The proposition
+
+R in R
+
+requires evaluation of itself to determine its truth value.
+
+Therefore:
+
+rho(R in R) = 1
+
+By the self-reference axiom:
+
+R in R = H
+
+Russell's paradox is therefore interpreted as a Horizon proposition within BHL.
+
+====================================================================
+
+8. CONCLUSION
+
+Boundary-Horizon Logic admits a bounded distributive lattice:
+
+            UH
+           /  \
+         KT    KF
+           \  /
+            H
+            |
+            U
+            |
+            X
+
+This structure provides a mathematical foundation for modeling distinguishability, uncertainty, resolution, and self-reference within the Boundary-Horizon-Finitude framework.
+
+Future work includes:
+
+- Horizon Modal Logic
+- Boundary Semantics
+- Proof Theory
+- Predicate Extensions
+- Category-Theoretic Formulations
+- Gödel Sentence Analysis
+- Liar Paradox Analysis
+- Horizon Dynamics
+- Boundary-Horizon Topology
+
+END OF DOCUMENT
