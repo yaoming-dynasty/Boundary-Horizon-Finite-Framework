@@ -1,8 +1,8 @@
 # Boundary-Horizon Mathematical Framework
 
-> **Status:** Certified & Ratified
-> **Version:** 1.0.0
-> **Authors:** `{Jeremey James Grice Rosa}` $\land$ `{Christopher Thomas Ronio}`
+> **Status:** Certified & Ratified  
+> **Version:** 1.0.0  
+> **Authors:** `{Jeremey James Grice Rosa}` $\land$ `{Christopher Thomas Ronio}`  
 > **Core Premise:** Quantifying the finite within the shadow of the infinite through differential boundary mechanics.
 
 ---
@@ -27,9 +27,9 @@ The framework is built upon five foundational entities:
 
 ## 3. The Core Equation
 
-$$\text{{Outside\_Boundary}} - \text{{Inside\_Boundary}} = \text{{Horizon}} = \text{{Finite\_Number}}$$
+$$\text{Outside\_Boundary} - \text{Inside\_Boundary} = \text{Horizon} = \text{Finite\_Number}$$
 
-$$\text{{Finite\_Number}} \propto \text{{Relative to Infinity}}$$
+$$\text{Finite\_Number} \propto \text{Relative to Infinity}$$
 
 ### Step-by-Step Breakdown
 
