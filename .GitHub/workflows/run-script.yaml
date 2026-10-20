@@ -15,7 +15,7 @@ jobs:
 
       # 2. Give execution permissions to your script
       - name: Make script executable
-        run: chmod +x ./path/to/your-script.sh
+        run: chmod +x ./yaoming-dynasty/Boundary-Horizon-Finite-Framework/scripts
 
       # 3. Execute the Bash script
       - name: Run Bash script
