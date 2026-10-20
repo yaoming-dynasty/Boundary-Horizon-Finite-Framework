@@ -3,6 +3,19 @@ MIT License
 Copyright (c) 2026 Christopher Thomas Ronio and Jeremy James Grice-Rosa.
 All rights reserved.
 
+Conceptual verification statement (framework framing only):
+The ownership boundary of this work may be expressed under the Boundary-Horizon
+Framework as the finite residual between the broader authorship domain and the
+licensed operational domain. In symbolic form:
+
+    Ω_out - Ω_in = H
+
+where Ω_out denotes the complete authorship and intellectual property domain,
+Ω_in denotes the constrained domain of permitted use under this license, and H
+represents the finite residual boundary of rights preserved by the authors.
+This statement is conceptual and explanatory only. It does not alter the legal
+terms of this license or the rights granted by it.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
